@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soumajit Chakraborty — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Soumajit Chakraborty, a Computer Science & Engineering student at Asansol Engineering College building full-stack web applications with React, Node.js and MySQL.">
+<meta name="theme-color" content="#F5F2EB">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader" aria-hidden="true"><span id="loader-pct">0%</span></div>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#hero" class="brand"><mark>Soumajit</mark> Chakraborty <span class="brand-sub">Full-Stack</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="navLinks">
+    <a href="#hero">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#approach">Approach</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Academics</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-small" href="assets/Resume.pdf" target="_blank" rel="noopener">Resume</a>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-text">
+    <h1>Idea. <span>Architecture.</span> Product.</h1>
+    <p class="lead">I'm a Computer Science &amp; Engineering student at Asansol Engineering College building full-stack web applications with <mark>React</mark>, <mark>Node.js</mark> and <mark>MySQL</mark>, and turning real-world problems into working products.</p>
+    <div class="cta-row">
+      <a class="btn" href="#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="assets/Resume.pdf" target="_blank" rel="noopener">View resume</a>
+      <a class="btn btn-ghost" data-link="github" href="#" target="_blank" rel="noopener">GitHub profile</a>
+    </div>
+    <ul class="stats">
+      <li><strong>110+</strong><span>LeetCode problems solved</span></li>
+      <li><strong>500+</strong><span>Students led at GDGoC</span></li>
+      <li><strong>SIH 2026</strong><span>Shortlisted</span></li>
+    </ul>
+  </div>
+  <figure class="portrait">
+    <img src="assets/images/portrait.jpg" alt="Portrait of Soumajit Chakraborty">
+  </figure>
+</section>
+
+<!-- NOW IN ROTATION -->
+<section id="now" class="section">
+  <p class="kicker">01 / Now in rotation</p>
+  <h2>A live snapshot of what is moving right now</h2>
+  <div class="grid-now">
+    <article class="card card-wide">
+      <p class="tag">Flagship work</p>
+      <h3>AgriLink — Intelligent Agricultural Marketplace</h3>
+      <p>A full-stack marketplace connecting farmers, buyers and FPOs, with role-based modules, a Node.js and Express API on MySQL, and multilingual support through the Google Language API.</p>
+      <a class="link" href="#projects">View project details</a>
+    </article>
+    <article class="card">
+      <p class="tag">Development focus</p>
+      <h3>Full-stack engineering</h3>
+      <p>React.js, Next.js, Express REST APIs and MySQL, plus AI integrations such as the Google Language API.</p>
+    </article>
+    <article class="card">
+      <p class="tag">DSA &amp; algorithms</p>
+      <h3>LeetCode practice</h3>
+      <p>110+ problems solved, backed by coursework in Data Structures and Algorithm Analysis.</p>
+      <a class="link" data-link="leetcode" href="#" target="_blank" rel="noopener">LeetCode profile ↗</a>
+    </article>
+    <article class="card">
+      <p class="tag">Cloud &amp; community</p>
+      <h3>Cloud Computing &amp; GDGoC</h3>
+      <p>Studying Cloud Computing, working with Google Cloud and Docker, and serving on the GDGoC core committee.</p>
+    </article>
+  </div>
+
+  <div class="github-box">
+    <div>
+      <p class="tag"><mark>GitHub contribution graph</mark> <a data-link="github" class="gh-handle" href="#" target="_blank" rel="noopener">github.com/Soumajit1</a></p>
+      <h3>Building projects regularly and consistently</h3>
+    </div>
+    <div class="graph-wrap"><img id="ghGraph" alt="GitHub contribution graph" loading="lazy"></div>
+    <div class="graph-meta"><span id="clock">ASANSOL · --:--:-- IST</span><a class="link" data-link="github" href="#" target="_blank" rel="noopener">View profile</a></div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Log &gt; React component architecture</span><span>Log &gt; Express REST API routes</span><span>Log &gt; MySQL schema design</span><span>Log &gt; Google Language API integration</span><span>Log &gt; Docker containers</span><span>Log &gt; LeetCode daily practice</span>
+      <span>Log &gt; React component architecture</span><span>Log &gt; Express REST API routes</span><span>Log &gt; MySQL schema design</span><span>Log &gt; Google Language API integration</span><span>Log &gt; Docker containers</span><span>Log &gt; LeetCode daily practice</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="kicker">02 / Work</p>
+  <h2>Fewer handoffs. Clearer logic.</h2>
+
+  <article class="project">
+    <div class="project-body">
+      <p class="tag">Flagship project · Full-stack</p>
+      <h3>AgriLink</h3>
+      <p class="sub">Intelligent Agricultural Marketplace</p>
+      <ul>
+        <li>Full-stack marketplace connecting <mark>farmers, buyers and FPOs</mark>.</li>
+        <li>Role-based modules for listings, offers, transactions and logistics.</li>
+        <li>REST APIs built with Node.js and Express, backed by a MySQL database.</li>
+        <li>Multilingual support through the Google Language API.</li>
+        <li>Feedback and grievance forms with a responsive UI.</li>
+      </ul>
+      <div class="cta-row"><a class="link" data-link="agrilink-live" href="#" target="_blank" rel="noopener">View live app ↗</a></div>
+    </div>
+    <div class="project-shot"><img src="assets/images/projects/agrilink.png" alt="AgriLink project thumbnail"></div>
+  </article>
+
+  <article class="project reverse">
+    <div class="project-body">
+      <p class="tag">Full-stack · Scholarships</p>
+      <h3>Unified Scholarship Portal</h3>
+      <p class="sub">Centralized scholarship discovery and application management</p>
+      <ul>
+        <li>Developed a centralized portal for <mark>scholarship discovery</mark> and application management.</li>
+        <li>Student profiles with eligibility-based scholarship matching.</li>
+        <li>Digital document submission and verification workflows.</li>
+        <li>Separate dashboards for Students, V.O.s and System Admins.</li>
+        <li>Application tracking and AI-powered scholarship assistance.</li>
+      </ul>
+      <div class="cta-row"><a class="link" data-link="scholarship-live" href="#" target="_blank" rel="noopener">View live app ↗</a></div>
+    </div>
+    <div class="project-shot"><img src="assets/images/projects/unified-scholarship.png" alt="Unified Scholarship Portal project thumbnail"></div>
+  </article>
+
+  <article class="project">
+    <div class="project-body">
+      <p class="tag">Full-stack · Jobs</p>
+      <h3>Online Job Portal</h3>
+      <p class="sub">A job board for candidates and recruiters</p>
+      <ul>
+        <li>Candidates can browse and apply to openings.</li>
+        <li>Recruiters can post and manage listings.</li>
+        <li>This project isn't on your resume yet, so edit these lines to match what you built.</li>
+      </ul>
+    </div>
+    <div class="project-shot"><img src="assets/images/projects/job-portal.png" alt="Online Job Portal project thumbnail"></div>
+  </article>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" class="section">
+  <p class="kicker">03 / Perspective</p>
+  <h2>How I think about building software</h2>
+  <div class="grid-3">
+    <article class="card">
+      <h3>Start from the problem</h3>
+      <p>AgriLink began with the gap between farmers and buyers, and Unified Scholarship with students missing opportunities. The problem comes first, then the stack.</p>
+    </article>
+    <article class="card">
+      <h3>Own the whole stack</h3>
+      <p>From the React interface to the Express routes and the MySQL tables underneath, I like understanding how each layer talks to the next.</p>
+    </article>
+    <article class="card">
+      <h3>Build for real users</h3>
+      <p>Role-based dashboards, multilingual support and verification workflows come from thinking about who actually uses the product.</p>
+    </article>
+  </div>
+  <blockquote class="callout">Build it. Then make it better.</blockquote>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <p class="kicker">04 / Technical toolkit</p>
+  <h2>Languages, frameworks &amp; tools</h2>
+  <div class="grid-2">
+    <article class="card">
+      <h3>Languages</h3>
+      <p>Core programming and problem solving.</p>
+      <ul class="chips"><li>Python</li><li>C</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
+    </article>
+    <article class="card">
+      <h3>Frontend</h3>
+      <p>Responsive interfaces that are easy to use.</p>
+      <ul class="chips"><li>React.js</li><li>Next.js</li><li>Tailwind CSS</li><li>Responsive Web Design</li></ul>
+    </article>
+    <article class="card">
+      <h3>Backend</h3>
+      <p>Server-side logic, REST APIs and request handling.</p>
+      <ul class="chips"><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>JSP</li><li>Servlets</li><li>JDBC</li></ul>
+    </article>
+    <article class="card">
+      <h3>Databases &amp; cloud</h3>
+      <p>Relational and cloud data storage, and containers.</p>
+      <ul class="chips"><li>MySQL</li><li>Firebase</li><li>Google Cloud</li><li>Docker</li></ul>
+    </article>
+    <article class="card">
+      <h3>AI &amp; integration</h3>
+      <p>Connecting AI services to real applications.</p>
+      <ul class="chips"><li>AI APIs</li><li>Google Language API</li><li>Document Data Extraction</li></ul>
+    </article>
+    <article class="card">
+      <h3>Tools &amp; platforms</h3>
+      <p>Version control and everyday development tooling.</p>
+      <ul class="chips"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Eclipse</li><li>Linux</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <p class="kicker">05 / Academic foundations</p>
+  <h2>Education &amp; experience</h2>
+  <div class="timeline">
+    <article class="tl-item">
+      <p class="tl-date">2024 — 2028 · Currently studying · CGPA 7.79</p>
+      <h3>B.Tech in Computer Science &amp; Engineering</h3>
+      <p>Asansol Engineering College (AEC), West Bengal</p>
+      <ul class="chips"><li>Data Structures</li><li>Cloud Computing</li><li>Algorithm Analysis</li></ul>
+    </article>
+    <article class="tl-item">
+      <p class="tl-date">2026 — 2029</p>
+      <h3>BBA — Bachelor of Business Administration</h3>
+      <p>Indira Gandhi National Open University (IGNOU)</p>
+    </article>
+    <article class="tl-item">
+      <p class="tl-date">2023 — 2024 · 63.8% (PCMB)</p>
+      <h3>Higher Secondary (Class XII)</h3>
+      <p>WBCHSE</p>
+    </article>
+    <article class="tl-item">
+      <p class="tl-date">2021 — 2022 · 66.8%</p>
+      <h3>Secondary (Class X)</h3>
+      <p>WBBSE</p>
+    </article>
+  </div>
+
+  <h3 class="sub-head">Experience</h3>
+  <div class="timeline">
+    <article class="tl-item">
+      <p class="tl-date">Internship</p>
+      <h3>Software Engineering Trainee — YuvaIntern</h3>
+      <p>Gained practical experience in software development and engineering practices.</p>
+    </article>
+    <article class="tl-item">
+      <p class="tl-date">July — September 2026 · Virtual internship</p>
+      <h3>AI for Sustainability — 1M1B</h3>
+      <p>Supported by AICTE in collaboration with IBM SkillsBuild.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <p class="kicker">06 / Achievements &amp; leadership</p>
+  <h2>Building under time constraints.</h2>
+  <div class="grid-3">
+    <article class="card">
+      <p class="tag">Smart India Hackathon</p>
+      <h3>Internal SIH cleared · SIH 2026 shortlisted</h3>
+      <p>Cleared the internal SIH hackathon and was shortlisted for SIH 2026.</p>
+    </article>
+    <article class="card">
+      <p class="tag">TCS CodeVita</p>
+      <h3>Cleared TCS CodeVita AY 2025</h3>
+      <p>Cleared a round of the TCS CodeVita coding contest in academic year 2025.</p>
+    </article>
+    <article class="card">
+      <p class="tag">LeetCode</p>
+      <h3>110+ problems solved</h3>
+      <p>Regular practice in data structures and algorithms.</p>
+      <a class="link" data-link="leetcode" href="#" target="_blank" rel="noopener">LeetCode profile ↗</a>
+    </article>
+  </div>
+
+  <article class="leadership">
+    <p class="tl-date">Nov 2025 — Present · Asansol Engineering College</p>
+    <h3>Core Committee Member — Google Developer Group (GDGoC)</h3>
+    <ul>
+      <li>Led Google Study Jam 2025 and the SPARK Hackathon.</li>
+      <li>Coordinated mentors, logistics and technical sessions.</li>
+      <li>Led a community of 500+ students.</li>
+    </ul>
+  </article>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+  <p class="kicker">07 / Certifications</p>
+  <h2>Learning that's verified.</h2>
+  <ul class="cert-list">
+    <li><a data-link="cert-oracle" href="#" target="_blank" rel="noopener">Oracle Cloud Infrastructure AI Foundations Associate (1Z0-1122-25)</a></li>
+    <li>Google Analytics Certification by Google</li>
+    <li><a data-link="cert-udemy-python" href="#" target="_blank" rel="noopener">Python, Flask, HTML Essentials — Udemy</a></li>
+    <li><a data-link="cert-arcade" href="#" target="_blank" rel="noopener">Google Cloud Arcade — Google Cloud Skill Boost</a></li>
+    <li><a data-link="cert-udemy-web" href="#" target="_blank" rel="noopener">Web Development Bootcamp — HTML, CSS, PHP, MySQL, WordPress</a></li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <p class="kicker">08 / Contact</p>
+  <h2>Got an interesting problem? Let's talk about it.</h2>
+  <p class="lead">I'm open to internships, full-stack roles, collaborative projects and technical discussions. Based in Asansol, West Bengal.</p>
+  <div class="cta-row">
+    <a class="btn" href="assets/Resume.pdf" target="_blank" rel="noopener">View / download resume</a>
+  </div>
+  <div class="social-grid">
+    <a class="social" style="--brand:#EA4335" data-link="email" href="#" aria-label="Send an email">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg></span>
+      <span class="s-name">Email</span><span class="s-hint">Send a message</span>
+    </a>
+    <a class="social" style="--brand:#2F5D50" data-link="phone" href="#" aria-label="Call me">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+      <span class="s-name">Phone</span><span class="s-hint">Call me</span>
+    </a>
+    <a class="social" style="--brand:#0A66C2" data-link="linkedin" href="#" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+      <span class="s-name">LinkedIn</span><span class="s-hint">Connect with me</span>
+    </a>
+    <a class="social" style="--brand:#181717" data-link="github" href="#" target="_blank" rel="noopener" aria-label="Open GitHub profile">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>
+      <span class="s-name">GitHub</span><span class="s-hint">See my code</span>
+    </a>
+    <a class="social" style="--brand:#FFA116" data-link="leetcode" href="#" target="_blank" rel="noopener" aria-label="Open LeetCode profile">
+      <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg></span>
+      <span class="s-name">LeetCode</span><span class="s-hint">See my problem solving</span>
+    </a>
+  </div>
+
+  <div class="terminal" id="terminal" aria-label="Contact form">
+    <div class="term-bar"><span></span><span></span><span></span><strong>SOUMAJIT TERMINAL [V1.0.0] · STRUCTURED INTAKE</strong></div>
+    <div class="term-body" id="termBody" aria-live="polite"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Soumajit Chakraborty. Built in Asansol, India.</p>
+  <p>Full-stack · Web · Systems</p>
+  <button class="kbd-btn" id="paletteBtn" aria-label="Open command palette">&gt;_ Ctrl K</button>
+</footer>
+
+<!-- Command palette -->
+<div class="palette" id="palette" hidden>
+  <div class="palette-box" role="dialog" aria-label="Command palette">
+    <input id="paletteInput" placeholder="Jump to section…" autocomplete="off">
+    <ul id="paletteList"></ul>
+    <p class="palette-help"><kbd>↑</kbd><kbd>↓</kbd> navigate <kbd>↵</kbd> select <kbd>ESC</kbd> close</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
