@@ -7,8 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    permissions:
+    runs-on: :
       contents: read
       pages: write
       id-token: write
