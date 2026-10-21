@@ -1,8 +1,9 @@
 name: Deploy GitHub Pages
 
-on:
-  push:
-    branches:
+      - main
+      id-token: write
+    steps:
+      - uses: actions/chev4
       - main
       id-token: write
     steps:
